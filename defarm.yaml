@@ -1,0 +1,94 @@
+animal:
+  species: "cattle"  # Example: 'cattle', 'buffalo', 'goat'
+  breed: "Nelore"  # Example: 'Nelore', 'Angus', 'Brahman'
+  sex: "male"  # Example: 'male', 'female', 'castrated'
+  birth_date: "2022-03-15"
+  own_farm: true
+  identifications:
+    ear_tag: "123456"
+    rfid: "9876543210"
+    sisbov_old: "AB1234"
+    sisbov: "BR987654"
+    internal_id: "BOI-001"
+
+ownership:
+  owner_name: "Fazenda Boa Esperança"
+  country: "Brazil"
+  brazil:
+    cpf_cnpj: "123.456.789-00"
+    property_name: "Fazenda Boa Esperança"
+    establishment_code: "BR123456"
+    exploracao_pecuaria: "Corte"
+    state_registration: "SP-123456"
+    mapa_code: "MAPA-7890"
+    geolocation: "-22.9129, -47.0626"
+    municipality: "Ribeirão Preto"
+    state: "SP"
+
+movement_history:
+  - date: "2023-01-10"
+    from: "Fazenda São José"
+    to: "Fazenda Boa Esperança"
+    reason: "purchase"
+  - date: "2023-06-05"
+    from: "Lote 1"
+    to: "Lote 3"
+    reason: "rotation"
+
+gta:
+  - gta_number: "GTA-123456"
+    issue_date: "2023-01-09"
+    valid_until: "2023-01-20"
+    transport_type: "road"
+    vehicle_plate: "ABC-1234"
+    purpose: "engorda"
+  - gta_number: "GTA-654321"
+    issue_date: "2023-06-05"
+    valid_until: "2023-06-15"
+    transport_type: "road"
+    vehicle_plate: "XYZ-9876"
+    purpose: "exposição"
+
+health_events:
+  vaccines:
+    - name: "Brucellosis"
+      date: "2023-02-10"
+    - name: "Foot-and-mouth"
+      date: "2023-07-15"
+
+hormone_use:
+  - hormone: "Somatotropin"
+    date: "2023-12-05"
+    dosage_mg: 20.5
+  - hormone: "Testosterone"
+    date: "2024-02-01"
+    dosage_mg: 15.0
+
+management:
+  system: "pasture"
+  supplementation: true
+  rotation_schedule: "every 30 days"
+
+weight_records:
+  - date: "2023-06-10"
+    unit: "kg"
+    value: 450
+  - date: "2023-12-15"
+    unit: "arroba"
+    value: 18.5
+
+environmental:
+  rural_registration_numbers:
+    - "CAR-001234"
+    - "CAR-005678"
+
+location:
+  - event_type: "identification"
+    geolocation: "-22.9129, -47.0626"
+    event_date: "2024-02-15"
+  - event_type: "boarding"
+    geolocation: "-22.5000, -47.3000"
+    event_date: "2024-02-16"
+  - event_type: "unloading"
+    geolocation: "-22.6000, -47.4000"
+    event_date: "2024-02-17"

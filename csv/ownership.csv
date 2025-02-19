@@ -1,0 +1,2 @@
+id,animal_id,owner_name,country,cpf_cnpj,property_name,establishment_code,exploracao_pecuaria,state_registration,mapa_code,geolocation,municipality,state
+1,1,Fazenda Boa Esperança,Brazil,123.456.789-00,Fazenda Boa Esperança,BR123456,Corte,SP-123456,MAPA-7890,"-22.9129, -47.0626",Ribeirão Preto,SP

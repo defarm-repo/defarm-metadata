@@ -1,0 +1,3 @@
+id,animal_id,date,from,to,reason
+1,1,2023-01-10,Fazenda São José,Fazenda Boa Esperança,purchase
+2,1,2023-06-05,Lote 1,Lote 3,rotation

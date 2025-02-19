@@ -1,0 +1,3 @@
+id,animal_id,gta_number,issue_date,valid_until,transport_type,vehicle_plate,purpose
+1,1,GTA-123456,2023-01-09,2023-01-20,road,ABC-1234,engorda
+2,1,GTA-654321,2023-06-05,2023-06-15,road,XYZ-9876,exposição

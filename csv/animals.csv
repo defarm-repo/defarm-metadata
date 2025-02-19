@@ -1,0 +1,2 @@
+id,species,breed,sex,birth_date,own_farm,ear_tag,rfid,sisbov_old,sisbov,internal_id
+1,cattle,Nelore,male,2022-03-15,true,123456,9876543210,AB1234,BR987654,BOI-001

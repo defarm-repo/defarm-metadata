@@ -1,0 +1,115 @@
+# Defines the Animal type
+type Animal {
+    species: String! # Example: "cattle", "buffalo", "goat"
+    breed: String! # Example: "Nelore", "Angus", "Brahman"
+    sex: String! # Example: "male", "female", "castrated"
+    birth_date: String! # YYYY-MM-DD
+    own_farm: Boolean! # true = born on farm, false = acquired
+    identifications: Identifications
+}
+
+# Identifications for the animal
+type Identifications {
+    ear_tag: String
+    rfid: String
+    sisbov_old: String
+    sisbov: String
+    internal_id: String # Internal farm-specific ID
+}
+
+# Ownership details
+type Ownership {
+    owner_name: String!
+    country: String!
+    brazil: BrazilRegistration
+}
+
+# Brazil-specific registration fields
+type BrazilRegistration {
+    cpf_cnpj: String
+    property_name: String
+    establishment_code: String
+    exploracao_pecuaria: String # Example: "Corte", "Leite"
+    state_registration: String
+    mapa_code: String
+    geolocation: String
+    municipality: String
+    state: String
+}
+
+# Movement history of the animal
+type MovementEntry {
+    date: String! # YYYY-MM-DD
+    from: String!
+    to: String!
+    reason: String! # Example: "purchase", "transfer", "sale", "rotation"
+}
+
+type MovementHistory {
+    entries: [MovementEntry]
+}
+
+# GTA transport guide records
+type GTAEntry {
+    gta_number: String!
+    issue_date: String!
+    valid_until: String!
+    transport_type: String! # Example: "road", "air", "sea"
+    vehicle_plate: String
+    purpose: String! # Example: "abate", "engorda", "reprodução", "exposição", "leilão", "esporte"
+}
+
+type GTA {
+    entries: [GTAEntry]
+}
+
+# Vaccination records
+type Vaccine {
+    name: String!
+    date: String!
+}
+
+type HealthEvents {
+    vaccines: [Vaccine]
+}
+
+# Hormone applications
+type HormoneApplication {
+    hormone: String!
+    date: String!
+    dosage_mg: Float!
+}
+
+type HormoneUse {
+    applications: [HormoneApplication]
+}
+
+# Management type
+type Management {
+    system: String! # Example: "pasture", "feedlot", "mixed"
+    supplementation: Boolean!
+    rotation_schedule: String
+}
+
+# Weight records
+type WeightEntry {
+    date: String!
+    unit: String! # Example: "kg", "arroba"
+    value: Float!
+}
+
+type WeightRecords {
+    entries: [WeightEntry]
+}
+
+# Query structure
+type Query {
+    getAnimal(id: ID!): Animal
+    getOwnership(id: ID!): Ownership
+    getMovementHistory(id: ID!): MovementHistory
+    getGTA(id: ID!): GTA
+    getHealthEvents(id: ID!): HealthEvents
+    getHormoneUse(id: ID!): HormoneUse
+    getManagement(id: ID!): Management
+    getWeightRecords(id: ID!): WeightRecords
+}

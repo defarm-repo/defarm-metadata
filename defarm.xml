@@ -1,0 +1,97 @@
+<!-- Animal Information -->
+<animal>
+    <species>cattle</species> <!-- Example: 'cattle', 'buffalo', 'goat' -->
+    <breed>Nelore</breed> <!-- Example: 'Nelore', 'Angus', 'Brahman' -->
+    <sex>male</sex> <!-- Example: 'male', 'female', 'castrated' -->
+    <birth_date>2022-03-15</birth_date>
+    <own_farm>true</own_farm> <!-- true = born on farm, false = acquired -->
+
+    <!-- Identifications -->
+    <identifications>
+        <ear_tag>123456</ear_tag>
+        <rfid>9876543210</rfid>
+        <sisbov_old>AB1234</sisbov_old>
+        <sisbov>BR987654</sisbov>
+        <internal_id>BOI-001</internal_id> <!-- Farm-specific internal ID -->
+    </identifications>
+</animal>
+
+<!-- Ownership Information -->
+<ownership>
+    <owner_name>Fazenda Boa Esperança</owner_name>
+    <country>Brazil</country>
+
+    <!-- Brazil-Specific Registration -->
+    <brazil>
+        <cpf_cnpj>123.456.789-00</cpf_cnpj>
+        <property_name>Fazenda Boa Esperança</property_name>
+        <establishment_code>BR123456</establishment_code>
+        <exploracao_pecuaria>Corte</exploracao_pecuaria>
+        <state_registration>SP-123456</state_registration>
+        <mapa_code>MAPA-7890</mapa_code>
+        <geolocation>-22.9129, -47.0626</geolocation>
+        <municipality>Ribeirão Preto</municipality>
+        <state>SP</state>
+    </brazil>
+</ownership>
+
+<!-- Movement History -->
+<movement_history>
+    <entry>
+        <date>2023-01-10</date>
+        <from>Fazenda São José</from>
+        <to>Fazenda Boa Esperança</to>
+        <reason>purchase</reason> <!-- Examples: 'purchase', 'transfer', 'sale', 'rotation' -->
+    </entry>
+    <entry>
+        <date>2023-06-05</date>
+        <from>Lote 1</from>
+        <to>Lote 3</to>
+        <reason>rotation</reason>
+    </entry>
+</movement_history>
+
+<!-- GTA Transport Guides -->
+<gta>
+    <entry>
+        <gta_number>GTA-123456</gta_number>
+        <issue_date>2023-01-09</issue_date>
+        <valid_until>2023-01-20</valid_until>
+        <transport_type>road</transport_type> <!-- Options: 'road', 'air', 'sea' -->
+        <vehicle_plate>ABC-1234</vehicle_plate>
+        <purpose>engorda</purpose> <!-- 'abate', 'engorda', 'reprodução', 'exposição', 'leilão', 'esporte' -->
+    </entry>
+</gta>
+
+<!-- Health Events -->
+<health_events>
+    <vaccine>
+        <name>Brucellosis</name>
+        <date>2023-02-10</date>
+    </vaccine>
+</health_events>
+
+<!-- Hormone Use -->
+<hormone_use>
+    <application>
+        <hormone>Somatotropin</hormone>
+        <date>2023-12-05</date>
+        <dosage_mg>20.5</dosage_mg>
+    </application>
+</hormone_use>
+
+<!-- Management -->
+<management>
+    <system>pasture</system> <!-- 'pasture', 'feedlot', 'mixed' -->
+    <supplementation>true</supplementation>
+    <rotation_schedule>every 30 days</rotation_schedule>
+</management>
+
+<!-- Weight Records -->
+<weight_records>
+    <entry>
+        <date>2023-06-10</date>
+        <unit>kg</unit>
+        <value>450</value>
+    </entry>
+</weight_records>
